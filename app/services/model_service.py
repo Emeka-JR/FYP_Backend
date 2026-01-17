@@ -35,7 +35,8 @@ class ModelService:
 
             # Load local label encoder (small file, kept in backend)
             base_dir = os.path.dirname(os.path.abspath(__file__))
-            label_encoder_path = os.path.join(base_dir, "..", "label_encoder.pkl")
+            label_encoder_path = os.path.join(base_dir, "label_encoder.pkl")
+
 
             if not os.path.exists(label_encoder_path):
                 raise FileNotFoundError("label_encoder.pkl not found")
