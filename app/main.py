@@ -19,7 +19,11 @@ app = FastAPI(
 # Configure CORS - Place this BEFORE any route definitions
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins
+     allow_origins=[
+        "http://localhost:4200",
+        "http://127.0.0.1:4200",
+        "https://fyp-frontend-sage.vercel.app",
+    ],# Allow all origins
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
