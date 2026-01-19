@@ -13,11 +13,12 @@ class Settings(BaseSettings):
 
     # CORS Configuration
     BACKEND_CORS_ORIGINS: List[str] = [
-        "http://localhost:4200",
-        "http://127.0.0.1:4200",
-        "http://localhost:8000",
-        "http://127.0.0.1:8000",
-    ]
+    "http://localhost:4200",
+    "http://127.0.0.1:4200",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "https://fyp-frontend-sage.vercel.app",
+]
 
     # MongoDB settings
     # Default for local dev; on Render this will be overridden by env var MONGODB_URL
